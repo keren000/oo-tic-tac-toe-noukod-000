@@ -105,8 +105,12 @@ def draw?
 end
 
 def over?
-  won? || draw?
-  
+  if won? || draw?
+    return true
+  else
+    return false
+  end
+end
 
 def winner
   index = []
